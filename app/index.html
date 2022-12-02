@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing DApp</title>
+</head>
+<body>
+    <div class="root" >
+        <p class="title">Turing DApp</p>
+        <div class="forms-container">
+            <p class="forms-title">Vote em um projeto!</p>
+            <form class="form">
+                <div class="outer-div-forms">
+                    <div class="codinome-student">
+                        <label for="select-name" class="label-inputs">Codinome do aluno</label>
+                        <select required name="select-student" class="select-name">
+                            <option value="default" selected disabled hidden>Selecione um codinome</option>
+                            <option value="Andre">Andre</option>
+                            <option value="Antonio">Antonio</option>
+                            <option value="Ratonilo">Ratonilo</option>
+                            <option value="eduardo">eduardo</option>
+                            <option value="Enzo">Enzo</option>
+                            <option value="Fernando">Fernando</option>
+                            <option value="Juliana">Juliana</option>
+                            <option value="Altoe">Altoe</option>
+                            <option value="Salgado">Salgado</option>
+                            <option value="Regata">Regata</option>
+                            <option value="Luis">Luis</option>
+                            <option value="Nicolas">Nicolas</option>
+                            <option value="Rauta">Rauta</option>
+                            <option value="Silva">Silva</option>
+                            <option value="Sophie">Sophie</option>
+                            <option value="Thiago">Thiago</option>
+                            <option value="Brito">Brito</option>
+                            <option value="ulopesu">ulopesu</option>
+                            <option value="Vinicius">Vinicius</option>
+                            <option value="Bonella">Bonella</option>
+                        </select>
+                    </div>
+    
+                    <div class="codinome-student">
+                        <label for="select-amount" class="label-inputs">Quantidade de Turings</label>
+                        <input required value="1" class="select-amount" type="number" min="0.000000000000000001" step="any" max="2">
+                    </div>
+                </div>
+
+                <div class="outer-btn">
+                    <button class="btn-send" type="submit">
+                        VOTAR
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
