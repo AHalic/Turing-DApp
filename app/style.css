@@ -1,0 +1,140 @@
+body {
+	height: 100%;
+	margin: 0;
+	background-color: #A6CED6;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: fit-content;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 2.5em;
+	color: #003366;
+	margin: 5px auto 10px; 
+}
+
+.forms-title {
+	font-weight: 500;
+	color: #324B58;
+	font-size: 1.3em;
+}
+
+.root {
+	display: flex;
+	background-color: #A6CED6;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	padding: 20px 0;
+}
+
+.forms-container {
+	background-color: #FCFBF9;
+	height: fit-content;
+	width: 40vw;
+	min-width: 380px;
+	margin: 20px 10px;
+	border-radius: 8px;
+	padding: 5vh 5vw;
+}
+
+select {
+	font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+	outline: none;
+	color: #324B58;
+	-webkit-appearance: none;
+	margin: 0;
+    padding: 0 5px;
+	appearance: none;
+	border: 1px solid #d6dbdd;
+	border-radius: 5px;
+	background-color: #FCFBF9;
+	height: 40px;
+}
+
+input {
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+	color: #324B58;
+    font-size: 15px;
+	margin: 0;
+    padding: 0 5px;
+	border: 1px solid #d6dbdd;
+	border-radius: 5px;
+	background-color: #FCFBF9;
+	height: 30px;
+}
+
+/* para tirar a seta no mozila */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+/* para tirar a seta no resto */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+	border: 1px solid #8bc2d9;	
+}
+
+select:focus {
+	border: 1px solid #8bc2d9;
+}
+
+.codinome-student {
+	display: flex;
+	flex-direction: column;
+	margin: 30px auto;
+}
+
+.outer-div-forms {
+	margin-top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.label-inputs {
+	font-weight: 400;
+	color: #6f818a;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 7px;
+}
+
+.btn-send {
+	font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+	color: #FCFBF9;
+	background-color: #50d970;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 16px;
+}
+
+.outer-btn {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin: 2vh 0;
+}
+
+.btn-send:hover {
+	background-color: #91e6a4;
+	cursor: pointer;
+}
