@@ -359,14 +359,12 @@ document.getElementById("vote").addEventListener("click", async () => {
         swal({
             text: "Voto computado com sucesso!",
             icon: "success",
-        });
+        })
+        .then(() => window.location.reload());
 
-        codinome.value = "";
-        amountDOM.value = "";
     })
     .catch((err) => {
-        swal("Não foi possível computar o voto!");
-        codinome.value = "";
-        amountDOM.value = "";
+        swal("Não foi possível computar o voto!")
+        .then(() => window.location.reload());
     })
 });
