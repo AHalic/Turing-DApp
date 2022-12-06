@@ -127,9 +127,24 @@ select:focus {
 	padding: 8px 16px;
 }
 
+.btn-change {
+	font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+	color: #FCFBF9;
+	background-color: #cb4646;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 16px;
+}
+
+.btn-change:hover {
+	background-color: #e06a6a;
+	cursor: pointer;
+}
+
 .outer-btn {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: flex-end;
 	margin: 2vh 0;
 }
