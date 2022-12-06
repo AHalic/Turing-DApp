@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing DApp</title>
+
+    <!-- Imports -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <div class="root" >
+        <p class="title">Turing DApp ADMIN</p>
+        <div class="forms-container">
+            <p class="forms-title">Página do Admin</p>
+            <form class="form" id="form"> <!--  onkeydown="return event.key != 'Enter';" -->
+                <div class="outer-div-forms">
+                    <div class="codinome-student">
+                        <label for="select-name" class="label-inputs">Codinome do aluno</label>
+                        <input required class="select-name">
+                    </div>
+    
+                    <div class="codinome-student">
+                        <label for="select-amount" class="label-inputs">Quantidade de Turings</label>
+                        <input required class="select-amount" type="number" min="0.000000000000000001" step="any">
+                    </div>
+                </div>
+
+                <div class="outer-btn">
+                    <button class="btn-change" id="allow-vote" type="button">
+                        ENCERRAR VOTAÇÃO
+                    </button>
+                    <button class="btn-send" id="vote" type="submit">
+                        GERAR
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./admin.js"></script>
+</body>
+</html>
