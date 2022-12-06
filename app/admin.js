@@ -356,9 +356,9 @@ document.getElementById("form").addEventListener("submit", async (event) => {
     const amountDOM = document.querySelector(".select-amount");
 
 	event.preventDefault();
-	const amount = BigInt(amountDOM.value * (10**18));
+	const amount = Number(amountDOM.value) * (10**18);
 	
-    await contract_inst.issueToken(addrs, amount)
+    await contract_inst.issueToken(addrs, String(amount))
     .then(() => {
         swal({
             text: "Turings gerados com sucesso!",

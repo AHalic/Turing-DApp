@@ -1,6 +1,6 @@
 let contract_inst;
 
-const contract_Address = "0x8D1C4A8AD1784789A5AA69e7Ba32223F8793bB55";
+const contract_Address = "0x13941CfB255Ce059E37cD0d4d910F4709B78D5CD";
 const contract_ABI = [
 	{
 		"inputs": [],
@@ -33,55 +33,6 @@ const contract_ABI = [
 		"type": "event"
 	},
 	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "from",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"internalType": "address",
-				"name": "to",
-				"type": "address"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "value",
-				"type": "uint256"
-			}
-		],
-		"name": "Transfer",
-		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "owner",
-				"type": "address"
-			},
-			{
-				"internalType": "address",
-				"name": "spender",
-				"type": "address"
-			}
-		],
-		"name": "allowance",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -103,38 +54,6 @@ const contract_ABI = [
 			}
 		],
 		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "account",
-				"type": "address"
-			}
-		],
-		"name": "balanceOf",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "decimals",
-		"outputs": [
-			{
-				"internalType": "uint8",
-				"name": "",
-				"type": "uint8"
-			}
-		],
-		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -211,45 +130,6 @@ const contract_ABI = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "name",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "symbol",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "totalSupply",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -272,6 +152,31 @@ const contract_ABI = [
 		],
 		"stateMutability": "nonpayable",
 		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "Transfer",
+		"type": "event"
 	},
 	{
 		"inputs": [
@@ -319,6 +224,114 @@ const contract_ABI = [
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			}
+		],
+		"name": "allowance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "decimals",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllow",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "name",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "symbol",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalSupply",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
 	}
 ];
 
@@ -332,29 +345,30 @@ provider.send("eth_requestAccounts", []).then(() => {
             contract_ABI,
             signer
         );
+		
+		if (!contract_inst.getAllow()) {
+			swal("A votação foi encerrada :(");
+			document.getElementById("vote").disabled = true;
+			document.getElementById("vote").style.backgroundColor = "#93979e";
+			document.getElementById("vote").style.cursor = "not-allowed";
+		} else {
+			document.getElementById("vote").disabled = false;
+			document.getElementById("vote").style.backgroundColor = "#50CA70";
+			document.getElementById("vote").style.cursor = "pointer";    
+		}
     });
 });
 
 
-// if (!contract_inst.allow_vote) {
-//     swal("A votação foi encerrada :(");
-//     document.getElementById("vote").disabled = true;
-//     document.getElementById("vote").style.backgroundColor = "#93979e";
-//     document.getElementById("vote").style.cursor = "not-allowed";
-// } else {
-//     document.getElementById("vote").disabled = false;
-//     document.getElementById("vote").style.backgroundColor = "#50d970";
-//     document.getElementById("vote").style.cursor = "pointer";    
-// }
 
-document.getElementById("vote").addEventListener("click", async () => {
-    console.log(document.querySelector(".select-name"))
+document.getElementById("form").addEventListener("submit", async (event) => {
     const codinome = document.querySelector(".select-name");
     const amountDOM = document.querySelector(".select-amount");
-    
-    const amount = Number(amountDOM.value) * (10**18);
-
-    await contract_inst.vote(codinome.value, amount)
+	
+	event.preventDefault();
+	const amount = Number(amountDOM.value) * (10**18);
+	
+    await contract_inst.vote(codinome.value, String(amount))
     .then(() => {
         swal({
             text: "Voto computado com sucesso!",
@@ -364,6 +378,7 @@ document.getElementById("vote").addEventListener("click", async () => {
 
     })
     .catch((err) => {
+		console.log(err);
         swal("Não foi possível computar o voto!")
         .then(() => window.location.reload());
     })
