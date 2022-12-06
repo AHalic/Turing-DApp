@@ -69,11 +69,12 @@ contract Turing is ERC20{
     }
 
     modifier voteEspecifier(string memory name, uint256 amount) {
-        require(msg.sender != adrs[name]);
-        require(amount < 2*10**18);
-        require(allow_vote == true);
-        require(!mapVoted[msg.sender][adrs[name]]);
-        require(bytes(adrs_reverse[msg.sender]).length > 0);
+        require(msg.sender != adrs[name]);                   // não vota em si
+        require(amount < 2*10**18);                          // quantidade maxima
+        require(allow_vote == true);                         // a votação não foi encerrada
+        require(!mapVoted[msg.sender][adrs[name]]);          // ainda não votou na pessoa
+        require(bytes(adrs_reverse[msg.sender]).length > 0); // sender autorizado
+        require(bytes(adrs[name).length > 0);                // codinome autorizado
         _;
     }
 
