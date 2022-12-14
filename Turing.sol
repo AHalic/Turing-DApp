@@ -69,12 +69,12 @@ contract Turing is ERC20{
     }
 
     modifier voteEspecifier(string memory name, uint256 amount) {
-        require(msg.sender != adrs[name]);                   // não vota em si
-        require(amount < 2*10**18);                          // quantidade maxima
-        require(allow_vote == true);                         // a votação não foi encerrada
-        require(!mapVoted[msg.sender][adrs[name]]);          // ainda não votou na pessoa
-        require(bytes(adrs_reverse[msg.sender]).length > 0); // sender autorizado
-        require(bytes(adrs[name).length > 0);                // codinome autorizado
+        require(msg.sender != adrs[name], "Sender can't vote for itself");                     // não vota em si
+        require(amount < 2 ether, "Amount must be smaller than 2 ether");                      // quantidade maxima
+        require(allow_vote == true, "Poll closed");                                            // a votação não foi encerrada
+        require(!mapVoted[msg.sender][adrs[name]], "Sender has already voted to that person"); // ainda não votou na pessoa
+        require(bytes(adrs_reverse[msg.sender]).length > 0, "Sender not available to vote");   // sender autorizado
+        require(adrs[name] != address(0), "Address unknown");                                  // codinome autorizado
         _;
     }
 
